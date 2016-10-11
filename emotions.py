@@ -32,6 +32,6 @@ def emotions (train_address, test_address, types):
 		errors = np.sum(predicted != y_test)
 		print('%s: %f percent errors on the test set' % (type, errors * 100 / len(y_test)))
 print('Banks:')
-emotions('database/bank_train_2016.xml', 'database/banks_test_etalon.xml', ['sberbank', 'vtb', 'gazprom', 'alfabank', 'bankmoskvy', 'alfabank', 'uralsib', 'rshb'])
+emotions('database/bank_train_2016.xml', 'database/banks_test_etalon.xml', ['sberbank', 'vtb', 'gazprom', 'alfabank', 'bankmoskvy', 'raiffeisen', 'uralsib', 'rshb'])
 print('Tkk')
 emotions('database/tkk_train_2016.xml', 'database/tkk_test_etalon.xml', ['beeline', 'mts', 'megafon', 'tele2', 'rostelecom', 'komstar', 'skylink'])
